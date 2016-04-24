@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 1 Homework</title>
+</head>
+
+  <!-- 
+    Input field where user enters a number.
+    When user enters a number, update display to show how many numbers have been entered, sum of the numbers, and the average of the numbers.
+    Reset button.
+    Error message if not a number.  
+  -->
+  
+<body> 
+  <form id="form" method="post" action="#">
+    <fieldset>
+      <label for="number-entered">User input field</label>
+      <input id ="number-entered" type="number" />
+      <input id="submit" type="submit" value="Submit" name="submit" />
+      <input id="reset" type="reset" value="Reset" name="reset" />
+      <div id="message"></div>
+    </fieldset>
+  </form>
+
+  <p>How many numbers entered: </p><p id="count">0</p>
+
+  <p>Sum of numbers entered: </p><p id="sum">0</p>
+
+  <p>Average of numbers entered: </p><p id="average">0</p>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+</body>
+</html>
